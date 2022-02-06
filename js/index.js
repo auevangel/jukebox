@@ -1,11 +1,10 @@
-function playAudio(audioId, buttonId) { 
-  let x = audioId;
-  x.play();
-  let y = buttonId;
-  document.getElementById(y).style.display="none";
-} 
+function playAudio(audioId) { 
+ let statusNow = document.getElementById(audioId).paused;
 
-function pauseAudio(audioId, buttonId) { 
-  let x=elementId;
-  x.pause(); 
-} 
+    if (statusNow === true) {
+        audioId.play();
+    } else {
+        audioId.pause();
+    };
+} ;
+

@@ -102,9 +102,7 @@ div.sound {
 }
 
 .play_button {
-    background-image: url("images/play_button.png");
-    background-repeat: no-repeat;
-    background-size:cover;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
