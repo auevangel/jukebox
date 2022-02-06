@@ -1,5 +1,5 @@
 function playAudio(audioId) { 
         let currentAudio = audioId;
-        alert(document.getElementById(currentAudio).pause);
-} ;
-
+        let statusNow = document.getElementById(currentAudio).paused;
+        document.getElementById("selection1_playButton").setAttribute("statusText", statusNow);
+};
