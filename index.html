@@ -4,20 +4,24 @@
         <script src="js/index.js"></script>
     </head>
     <body>
-        <div id="container1">
-            <div id="container2">
-                <div id="selector">
-                        <form id="tracks">
-                            <label for="track-list">Select your track:</label>
-                            <select id="track-list" name="track-name">
-                                <option value="track0">Track 0</option>
-                                <option value="track1">Track 1</option>
-                                <option value="track2">Track 2</option>
-                            </select>
-                            <input type="submit" value="Send">
-                        </form>
+        <section>
+            <div id="container1">
+                <div id="instructions">
+
                 </div>
             </div>
-        </div>
+        </section>
+        <section>
+            <div id="trackplayer">
+                <div id="track1">
+                    <p> <img src="tracks/track1/girl-2696947_1920.jpg"></p>
+                    <p> <audio controls>
+                        <source src="tracks/track1/3562d9aa6a0f9762eac6029555da353d.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                      </audio></p>
+                </div>
+            </div>
+        </section>
+
     </body>
 </html>
