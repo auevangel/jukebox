@@ -1,5 +1,9 @@
-function resizeBody() {
-let bodyWidth = window.innerWidth;
-let bodyHeight = window.innerHeight;
-document.getElementByTagName("body").setAttribute("width", bodyWidth);
-document.getElementByTagName("body").setAttribute("height", bodyHeight);}
+function playAudio(elementId) { 
+  let x = elementId;
+  x.play(); 
+} 
+
+function pauseAudio(elementId) { 
+  let x=elementId;
+  x.pause(); 
+} 
