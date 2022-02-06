@@ -15,16 +15,16 @@
         <section>
             <div id="trackplayer">
                 <div id="selection1" class="track-selection">
-                    <div class="photo-block"> <img id="selection1-photo" class="photo" src="tracks/track1/girl-2696947_1920.jpg" onclick="document.getElementById('track1-audio').play();"></div>
-                    <div class="title"><p>Song: <span id="selection1-title">The Dance</span></p></div>
-                    <div class="artist"><p>Artist: <span id="selection1-artist">Kyle Cox</span></p></div>
-                    <div class="duration"><p>Duration: <span id="selection1-duration">1:32</span></p></div>
+                    <div class="photo-block"> <img id="selection1_photo" class="photo" src="tracks/track1/girl-2696947_1920.jpg" onclick="document.getElementById('track1-audio').play();"></div>
+                    <div class="title"><p>Song: <span id="selection1_title">The Dance</span></p></div>
+                    <div class="artist"><p>Artist: <span id="selection1_artist">Kyle Cox</span></p></div>
+                    <div class="duration"><p>Duration: <span id="selection1_duration">1:32</span></p></div>
                     <div class="sound">
-                        <audio id="selection1-audio"> <source id="track1-soundfile" src="tracks/track1/3562d9aa6a0f9762eac6029555da353d.mp3" type="audio/mpeg">
+                        <audio id="selection1_audio"> <source id="track1-soundfile" src="tracks/track1/3562d9aa6a0f9762eac6029555da353d.mp3" type="audio/mpeg">
                             Your browser does not support the audio tag.
                           </audio>
-                          <button onclick="playAudio('selection1-audio')" type="button">Play Audio</button>
-                          <button onclick="pauseAudio('selection1-audio')" type="button">Pause Audio</button> 
+                         <img id="selection1_playButton" class="play_button" src="images/play-button.png" onclick="playAudio(selection1_audio, selection1_playButton)">
+                          </div>
                     </div>
                 </div>
             </div>
