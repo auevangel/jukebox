@@ -1,8 +1,8 @@
 function playAudio(audioId, buttonId) { 
-  let x = elementId;
-  let y = buttonId;
+  let x = audioId;
   x.play();
-  document.getElementById(y).style.display = "none";
+  let y = buttonId;
+  document.getElementById(y).style.display="none";
 } 
 
 function pauseAudio(audioId, buttonId) { 
