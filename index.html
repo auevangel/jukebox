@@ -2,7 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
+
         <script type = "text/javascript" src="js/index.js"></script>  
+        <!--For any of the functions called by any element, please go to js/index.js for documentation an references-->
+
         <link href="css/index.css" rel="stylesheet">
     </head>
     <body >
@@ -15,25 +18,90 @@
         </section>
         <section>
             <div id="trackplayer">
+                <!-------------------------------------------------------------------------------------------------------------------------------->
                 <div id="selection1" class="track-selection">
                     <div class="photo-block"> <img id="selection1_photo" class="photo" src="tracks/track1/girl-2696947_1920.jpg" onclick="document.getElementById('track1-audio').play();"></div>
                     <div class="title"><p>Song: <span id="selection1_title">The Dance</span></p></div>
                     <div class="artist"><p>Artist: <span id="selection1_artist">Kyle Cox</span></p></div>
                     <div class="duration"><p>Duration: <span id="selection1_duration">1:32</span></p></div>
                     <div class="sound">
-                        <audio id="selection1_audio"> <source id="track1-soundfile" src="tracks/track1/3562d9aa6a0f9762eac6029555da353d.mp3" type="audio/mpeg">
+                        <audio id="selection1_audio"> <source id="selection1-soundfile" src="tracks/track1/3562d9aa6a0f9762eac6029555da353d.mp3" type="audio/mpeg">
                             Your browser does not support the audio tag.
                           </audio>
-                         <input id="selection1_playButton" class="play_button" onclick="playAudio('selection1_audio')" type="button" value="&#9654">
-                         <input id="selection1_playButton" class="pause_button" onclick="pauseAudio('selection1_audio')" type="button" value="&#9208">
+                        <input id="selection1_playButton" class="play_button" onclick="playAudio('selection1_audio', 'selection1_bar')" type="button" value="&#9654">
+                        <input id="selection1_playButton" class="pause_button" onclick="pauseAudio('selection1_audio')" type="button" value="&#9208">
+                    </div>
+                    <div class="progressBar_container">
+                        <div class="progressBar">
+                            <p id="selection1_bar" class="baroutline"></p>
+                        </div>
+                    </div>
+                    <div class="slidecontainer">
+                        <div id="selection1_defaultSlider" class="actual_slider">
+                            <span>0</span>
+                            <input id="selection1_slider" type="range" min="1" max="100" value="50" class="volume_slider" onchange="adjustVolume('selection1_slider','selection1_audio')">
+                            <span>100</span> &#128264
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-------------------------------------------------------------------------------------------------------------------------------->
+                <div id="selection2" class="track-selection">
+                    <div class="photo-block"> <img id="selection2_photo" class="photo" src="tracks/track2/guitarist-1869787_1920.jpg" onclick="document.getElementById('track1-audio').play();"></div>
+                    <div class="title"><p>Song: <span id="selection2_title">Helice</span></p></div>
+                    <div class="artist"><p>Artist: <span id="selection2_artist">Monplaisir</span></p></div>
+                    <div class="duration"><p>Duration: <span id="selection2_duration">2.41</span></p></div>
+                    <div class="sound">
+                        <audio id="selection2_audio"> <source id="selection2-soundfile" src="tracks/track2/Monplaisir_-_01_-_Hlice.mp3" type="audio/mpeg">
+                            Your browser does not support the audio tag.
+                          </audio>
+                        <input id="selection2_playButton" class="play_button" onclick="playAudio('selection2_audio', 'selection2_bar')" type="button" value="&#9654">
+                        <input id="selection2_playButton" class="pause_button" onclick="pauseAudio('selection2_audio')" type="button" value="&#9208">
 
                     </div>
-                    <div class="progressBar">
-                        <p id="selection1_bar" class="baroutline"></p>
+                    <div class="progressBar_container">
+                        <div class="progressBar">
+                            <p id="selection2_bar" class="baroutline"></p>
+                        </div>
                     </div>
-                      
+                    <div class="slidecontainer">
+                        <div id="selection2_defaultSlider" class="actual_slider">
+                            <span>0</span>
+                            <input id="selection2_slider" type="range" min="1" max="100" value="50" class="volume_slider" onchange="adjustVolume('selection2_slider','selection2_audio')">
+                            <span>100</span> &#128264
+                        </div>
+                    </div>                      
                 </div>
-            </div>
+
+                <!-------------------------------------------------------------------------------------------------------------------------------->
+                    <div id="selection3" class="track-selection">
+                        <div class="photo-block"> <img id="selection3_photo" class="photo" src="tracks/track1/girl-2696947_1920.jpg" onclick="document.getElementById('track1-audio').play();"></div>
+                        <div class="title"><p>Song: <span id="selection3_title">The Dance</span></p></div>
+                        <div class="artist"><p>Artist: <span id="selection3_artist">Kyle Cox</span></p></div>
+                        <div class="duration"><p>Duration: <span id="selection3_duration">1:32</span></p></div>
+                        <div class="sound">
+                            <audio id="selection3_audio"> <source id="selection3-soundfile" src="tracks/track1/3562d9aa6a0f9762eac6029555da353d.mp3" type="audio/mpeg">
+                                Your browser does not support the audio tag.
+                              </audio>
+                            <input id="selection3_playButton" class="play_button" onclick="playAudio('selection3_audio', 'selection3_bar')" type="button" value="&#9654">
+                            <input id="selection3_playButton" class="pause_button" onclick="pauseAudio('selection3_audio')" type="button" value="&#9208">
+    
+                        </div>
+                        <div class="progressBar_container">
+                            <div class="progressBar">
+                                <p id="selection3_bar" class="baroutline"></p>
+                            </div>
+                        </div>
+                        <div class="slidecontainer">
+                            <div id="selection3_defaultSlider" class="actual_slider">
+                                <span>0</span>
+                                <input id="selection3_slider" type="range" min="1" max="100" value="50" class="volume_slider" onchange="adjustVolume('selection3_slider','selection3_audio')">
+                                <span>100</span> &#128264
+                            </div>
+                        </div>                      
+                    </div>
+
         </section>
         <section>
                 <script>
