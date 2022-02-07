@@ -20,6 +20,8 @@ References on the commands, methods and functions are at stated at the end of th
             //Related commands on playing the sound
             audioElement.play();//plays the track
 
+            //Related commands on stopping other tracks
+            //The commands below will stop other tracks when one is playing
             let audioArray = ['selection1_audio', 'selection2_audio', 'selection3_audio'];
             let index_audioId = audioArray.indexOf(audioId);
             audioArray.splice(index_audioId, 1);
