@@ -11,8 +11,8 @@
     <body >
         <section>
             <div id="container1">
-                <div id="instructions">
-                    <h1>Instructions</h1>
+                <div id="introduction">
+                    <p>Music Player</p>
                 </div>
             </div>
         </section>
@@ -84,7 +84,7 @@
                                             <p class="sound_url">Click <a id="selection3_url" href="https://www.chosic.com/download-audio/24851/" target="_blank">here</a> for the original file.</p></div>
                         <div class="duration"><p>Duration: <span id="selection3_duration">0:53</span></p></div>
                         <div class="sound">
-                            <audio id="selection3_audio"> <source id="selection3-soundfile" src="tracks/track1/3562d9aa6a0f9762eac6029555da353d.mp3" type="audio/mpeg">
+                            <audio id="selection3_audio"> <source id="selection3-soundfile" src="tracks/track3/Stephen_Foster_-_Beautiful_Dreamer.mp3" type="audio/mpeg">
                                 Your browser does not support the audio tag.
                               </audio>
                             <input id="selection3_playButton" class="play_button" onclick="playAudio('selection3_audio', 'selection3_bar')" type="button" value="&#9654">
@@ -104,11 +104,21 @@
                             </div>
                         </div>                      
                     </div>
-
+                
+            </div>
         </section>
         <section>
-                <script>
-                </script>
+        <div id="navigate_selection">
+            <div id="view_buttons">
+                <div id="previous_next">
+                    <input class="prev" onclick="plusSlides(-1)" value="&#10094" type="button">
+                    <input class="next" onclick="plusSlides(-1)" value="&#10095" type="button">
+                </div>
+            </div>
+            <div id="dot_navigation" style="text-align:center">
+              </div>
+            </div>
+        </div>
         </section>
 
     </body>
