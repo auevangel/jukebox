@@ -8,7 +8,6 @@ header {
 
 html, body {
     height: 100vh;
-    border: 1px solid black;
     margin: 0 0;
     padding: 0 0;
 
@@ -17,7 +16,6 @@ html, body {
 #container1 {
     height: 5vh;
     width: 100%;
-    border: 1px solid black;
     margin: 0 0;
 
 }
@@ -39,9 +37,12 @@ html, body {
     justify-content: space-around;
     height: 75vh;
     width: 100%;
-    border: 1px solid black;
     margin: 0 auto;
 
+}
+
+#selection1 {
+    display:block;
 }
 
 .track-selection {
@@ -51,7 +52,7 @@ html, body {
     padding: 0;
     border: 1px solid black;
     border-radius: 5%;
-    /*display: none;*/
+    display: none;
 
 }
 
@@ -189,11 +190,9 @@ div.progressBar_container {
     height: 20vh;
     margin: 0 0;
     padding: 0 0;
-    border: 1px solid black;
-
 }
+
 #view_buttons {
-    border: 1px solid red;
     width: 50%;
     height: 6vh;
     padding: 0 0;
@@ -204,7 +203,6 @@ div.progressBar_container {
 #previous_next {
     width: 40%;
     height: 6vh;
-    border: 1px solid black;
     margin: 0 auto;
     padding: 0 0;
 }
@@ -223,7 +221,6 @@ div.progressBar_container {
     user-select: none;
     padding: 0 0;
     margin: 0 4.5%;
-    border: 1px solid black;
   }
 
 
@@ -233,7 +230,6 @@ div.progressBar_container {
   }
 
   #dot_navigation {
-    border: 1px solid red;
     width: 50%;
     height: 30%;
     margin: 1% auto;
