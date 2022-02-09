@@ -77,7 +77,7 @@ References on the commands, methods and functions are at stated at the end of th
     }
 
 /* SLIDESHOW RELATED COMMANDS
-*/
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -116,7 +116,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+*/
             
 /*
 REFERENCES
