@@ -29,6 +29,7 @@ References on the commands, methods and functions are at stated at the end of th
             remainingArray.forEach(pauseTrack);
             function pauseTrack(fullItem) {
                 document.getElementById(fullItem).pause();
+                clearInterval(id);
 
             };
             
@@ -75,10 +76,48 @@ References on the commands, methods and functions are at stated at the end of th
             audioElement.volume = convertValue;//set the volume of the music to the converted value
     }
 
+/* SLIDESHOW RELATED COMMANDS
 
+var slideIndex = 1;
+showSlides(slideIndex);
 
+function pauseAllSwitch() {
+    let audioArray = ['selection1_audio', 'selection2_audio', 'selection3_audio'];
+    audioArray.forEach(pauseTrack);
+    function pauseTrack(fullItem) {
+        document.getElementById(fullItem).pause();
+        clearInterval(id);
+    };
+}
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+  pauseAllSwitch();
+}
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+  pauseAllSwitch();
+}
 
+function showSlides(n) {
+  pauseAllSwitch();
+  var i;
+  var slides = document.getElementsByClassName("track-selection");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";      
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+*/
+            
 /*
 REFERENCES
 
@@ -133,6 +172,11 @@ Topic - On change function
 Topic - Volume property
     (a) https://www.w3schools.com/tags/av_prop_volume.asp
     (b) https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_av_prop_volume
+
+
+SET OF FUNCTIONS RELATED TO SLIDESOW
+The reference below shows how to create a slideshow so that the user can change between tracks.
+    (a) https://www.w3schools.com/howto/howto_js_slideshow.asp
 
 */
 
